@@ -1,5 +1,6 @@
 .thumbnail{
     width: 100%;
+    border-radius: 10px;
 }
 .svg{
     width: 16px;
@@ -23,7 +24,8 @@
 }
 .video-info{
     display: inline-block;
-    width: 200px;   
+    width: 200px;
+    margin-bottom: 35px;   
 }
 .channel-img{
     width: 35px;
@@ -49,4 +51,22 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 40px;
+}
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: rgba(18, 18, 18, 0.8);
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+.thumbnail-row {
+  position: relative;
 }

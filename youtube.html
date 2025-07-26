@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="video.css">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,7 +20,9 @@
         <div class="center">
             <input type="text" class="search-bar" placeholder="Search">
             <button  class="search"><img src="icons/icons8-search-30.png"class="searchpng"></button>
-            <button  class="mic"><img src="icons/icons8-mic-48.png" class="micpng"></button>
+            <button  class="mic"><img src="icons/icons8-mic-48.png" class="micpng">
+            <div class="tooltip">Search with your voice</div>
+            </button>
         </div>
         <div class="right">
             <button class="create">
@@ -28,15 +31,38 @@
             </button>
             <button class="notifications">
             <img src="icons/icons8-notification-24.png" class="notification">
+            <div class="tooltip">Notifications</div>
             </button>
             <img src="icons/profile.jpeg" class="profile">
         </div>
     </div>    
-    
+    <div class="sidebar">
+        <div class="sidebar-icon">
+            <img src="icons/icons8-home-24.png">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/icons8-youtube-shorts-24.png">
+            <div>Shorts</div>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/icons8-video-playlist-50.png">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/icons8-profile-24.png">
+            <div>You</div>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/icons8-download-24.png">
+            <div>Downloads</div>
+        </div>
+    </div>
     <div class="video-grid-1">
         <div class="video">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="https://img.youtube.com/vi/Mxv5h-RZWVs/maxresdefault.jpg">
+                <div class="video-time">12:30</div>
             </div>
             <div>
                 <div class="channel-photo"> 
@@ -53,6 +79,7 @@
         <div class="video">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="https://img.youtube.com/vi/JuBBIJ7adjM/maxresdefault.jpg">
+                <div class="video-time">19:33</div>
             </div>
             <div>
                 <div class="channel-photo"> 
@@ -69,6 +96,7 @@
         <div class="video">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="https://img.youtube.com/vi/7QJ-N-AQJYc/maxresdefault.jpg">
+                <div class="video-time">8:08</div>
             </div>
             <div>
                 <div class="channel-photo"> 
@@ -85,6 +113,7 @@
         <div class="video">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="https://img.youtube.com/vi/pzBi1nwDn8U/maxresdefault.jpg">
+                <div class="video-time">33:03</div>
             </div>
             <div>
                 <div class="channel-photo"> 
@@ -101,15 +130,16 @@
         <div class="video">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="https://img.youtube.com/vi/YphL3Whh5B0/maxresdefault.jpg">
+                <div class="video-time">8:28</div>
             </div>
             <div>
                 <div class="channel-photo"> 
-                    <img class="channel-img" src="https://yt3.ggpht.com/78fjpGo2Fn7MJOhlLyqamRQaNlMZBP_ZYJiFh5BRRLa2qHi-IlANnhiY7pYEYc_mcFfP7iCxAg=s800-c-k-c0x00ffffff-no-rj">
-                    <div class="video-info">
-                        <p class="video-title">Cricket World Cup 2011 Final: India v Sri Lanka | Match Highlights</p>
-                        <p class="channel">ICC<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
-                        <p class="video-stats">21M views &#183; 1 year ago</p>
-                    </div>
+                    <img class="channel-img" src="icons/Icon.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Cricket World Cup 2011 Final: India v Sri Lanka | Match Highlights</p>
+                    <p class="channel">ICC<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
+                    <p class="video-stats">21M views &#183; 1 year ago</p>
                 </div>
             </div>   
         </div>
@@ -117,6 +147,7 @@
         <div class="video">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="https://img.youtube.com/vi/zhEWqfP6V_w/maxresdefault.jpg">
+                <div class="video-time">2:08</div>
             </div>
             <div>
                 <div class="channel-photo"> 
@@ -130,8 +161,109 @@
             </div>   
         </div>
 
-    </div>
+        <div class="video">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://img.youtube.com/vi/Era0VAIUATw/maxresdefault.jpg">
+                <div class="video-time">2:12</div>
+            </div>
+            <div>
+                <div class="channel-photo"> 
+                    <img class="channel-img" src="icons/unnamed.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Michael Phelps breaks 200m Freestyle World Record | Beijing 2008 Olympic Games</p>
+                    <p class="channel">Olympics<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
+                    <p class="video-stats">9.7M views &#183; 15 years ago</p>
+                </div>
+            </div>   
+        </div>
+    
 
+        <div class="video">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://img.youtube.com/vi/cn7AFhVEI5o/maxresdefault.jpg">
+                <div class="video-time">2:13</div>
+            </div>
+            <div>
+                <div class="channel-photo"> 
+                    <img class="channel-img" src="icons/maps.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Explore Views of the Burj Khalifa with Google Maps</p>
+                    <p class="channel">Google Maps<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
+                    <p class="video-stats">22M views &#183; 12 years ago</p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="video">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://img.youtube.com/vi/I2O7blSSzpI/maxresdefault.jpg">
+                <div class="video-time">17:53</div>
+            </div>
+            <div>
+                <div class="channel-photo"> 
+                    <img class="channel-img" src="icons/lemmek.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Cicada 3301: An Internet Mystery</p>
+                    <p class="channel">LEMMiNO<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
+                    <p class="video-stats">39M views &#183; 7 years ago</p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="video">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://img.youtube.com/vi/QDCcuCHOIyY/maxresdefault.jpg">
+                <div class="video-time">28:48</div>
+            </div>
+            <div>
+                <div class="channel-photo"> 
+                    <img class="channel-img" src="icons/VSAUCE.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">The Power of Suggestion</p>
+                    <p class="channel">VSauce<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
+                    <p class="video-stats">89M views &#183; 7 years ago</p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="video">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://img.youtube.com/vi/J9elzJqlqfc/maxresdefault.jpg">
+                <div class="video-time">6:45</div>
+            </div>
+            <div>
+                <div class="channel-photo"> 
+                    <img class="channel-img" src="icons/channels4_profile.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">One must imagine Sisyphus happy</p>
+                    <p class="channel">The Art of Thinking<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
+                    <p class="video-stats">2.2M views &#183; 1 year ago</p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="video">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://img.youtube.com/vi/Mxv5h-RZWVs/maxresdefault.jpg">
+                <div class="video-time">37:02</div>
+            </div>
+            <div>
+                <div class="channel-photo"> 
+                    <img class="channel-img" src="icons/channels4_profile (1).jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Something Strange Happens When You Follow Einstein's Math</p>
+                    <p class="channel">Veritasium<svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg></p>
+                    <p class="video-stats">23M views &#183; 1 year ago</p>
+                </div>
+            </div>   
+        </div>
+    </div>
 </body>
 
 </html>
